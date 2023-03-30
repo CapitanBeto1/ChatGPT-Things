@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imagen con texto centrado</title>
+	<style>
+		#container {
+			position: relative;
+			display: inline-block;
+			margin: 50px;
+			padding: 0;
+			text-align: center;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		#texto {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 20px;
+			color: white;
+			text-shadow: 1px 1px 1px black;
+			width: 90%;
+			max-height: 90%;
+			overflow: auto;
+		}
+	</style>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="container">
+		<img id="imagen" src="/descarga.jpg" alt="Mi imagen">
+		<div id="texto">Este eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees mi texto</div>
+	</div>
+</body>
+</html>
